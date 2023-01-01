@@ -1,0 +1,9 @@
+project: untangle
+target: fuzz-xml
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_xml.py
+    libfuzzer: true
+    timeout: 12
